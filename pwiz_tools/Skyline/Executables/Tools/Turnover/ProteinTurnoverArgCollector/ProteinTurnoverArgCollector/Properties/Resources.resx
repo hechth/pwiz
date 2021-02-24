@@ -132,4 +132,16 @@
   <data name="ProteinTurnoverUI_VerifyArguments_Radio_must_be_checked" xml:space="preserve">
     <value>P value tolerance must be selected</value>
   </data>
+  <data name="ProteinTurnoverUI_VerifyArguments_Please_select_a_treatment_group_" xml:space="preserve">
+    <value>Please select a treatment group.</value>
+  </data>
+  <data name="ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_between__1__and__2_" xml:space="preserve">
+    <value>The number {0} must be between {1} and {2}</value>
+  </data>
+  <data name="ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_less_than__1_" xml:space="preserve">
+    <value>The number {0} must be less than {1}</value>
+  </data>
+  <data name="ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_greater_than__1_" xml:space="preserve">
+    <value>The number {0} must be greater than {1}</value>
+  </data>
 </root>

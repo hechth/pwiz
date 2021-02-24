@@ -47,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.labelQValueWarning = new System.Windows.Forms.Label();
             this.comboReference = new System.Windows.Forms.ComboBox();
+            this.checkBoxFilterQValues = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnOk
@@ -142,12 +143,20 @@
             resources.ApplyResources(this.comboReference, "comboReference");
             this.comboReference.Name = "comboReference";
             // 
+            // checkBoxFilterQValues
+            // 
+            resources.ApplyResources(this.checkBoxFilterQValues, "checkBoxFilterQValues");
+            this.checkBoxFilterQValues.Name = "checkBoxFilterQValues";
+            this.checkBoxFilterQValues.UseVisualStyleBackColor = true;
+            this.checkBoxFilterQValues.CheckedChanged += new System.EventHandler(this.checkBoxFilterQValues_CheckedChanged);
+            // 
             // ProteinTurnoverUI
             // 
             this.AcceptButton = this.btnOk;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
+            this.Controls.Add(this.checkBoxFilterQValues);
             this.Controls.Add(this.comboReference);
             this.Controls.Add(this.labelQValueWarning);
             this.Controls.Add(this.label5);
@@ -194,6 +203,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelQValueWarning;
         private System.Windows.Forms.ComboBox comboReference;
+        private System.Windows.Forms.CheckBox checkBoxFilterQValues;
     }
 }
 

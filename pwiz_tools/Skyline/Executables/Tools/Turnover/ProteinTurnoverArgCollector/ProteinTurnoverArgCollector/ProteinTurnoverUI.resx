@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 23</value>
+    <value>216, 12</value>
   </data>
   <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -145,13 +145,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 54</value>
+    <value>216, 41</value>
   </data>
   <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -172,7 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -181,7 +181,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 156</value>
+    <value>8, 137</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 13</value>
@@ -202,7 +202,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 12</value>
@@ -229,7 +229,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textDietEnrichment.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="percentLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -295,10 +295,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;percentLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="textAverageTurnover.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 75</value>
+    <value>11, 67</value>
   </data>
   <data name="textAverageTurnover.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 18</value>
@@ -319,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textAverageTurnover.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,7 +331,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 59</value>
+    <value>8, 51</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 13</value>
@@ -352,10 +352,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="textIDP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 123</value>
+    <value>11, 110</value>
   </data>
   <data name="textIDP.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 18</value>
@@ -376,7 +376,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textIDP.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -388,7 +388,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 107</value>
+    <value>8, 94</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 13</value>
@@ -409,13 +409,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="textFolderName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 172</value>
+    <value>11, 153</value>
   </data>
   <data name="textFolderName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 18</value>
+    <value>164, 18</value>
   </data>
   <data name="textFolderName.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -433,20 +433,17 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textFolderName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="textQValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 268</value>
+    <value>32, 255</value>
   </data>
   <data name="textQValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 18</value>
+    <value>143, 18</value>
   </data>
   <data name="textQValue.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 12</value>
-  </metadata>
   <data name="textQValue.ToolTip" xml:space="preserve">
     <value>Minimum Q value to allow [0.0001,1]</value>
   </data>
@@ -460,7 +457,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textQValue.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelQValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -469,16 +466,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelQValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 252</value>
+    <value>29, 239</value>
   </data>
   <data name="labelQValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+    <value>93, 13</value>
   </data>
   <data name="labelQValue.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="labelQValue.Text" xml:space="preserve">
-    <value>&amp;Q value:</value>
+    <value>&amp;Q value threshold:</value>
   </data>
   <data name="&gt;&gt;labelQValue.Name" xml:space="preserve">
     <value>labelQValue</value>
@@ -490,8 +487,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelQValue.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 12</value>
+  </metadata>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -499,16 +499,16 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 200</value>
+    <value>8, 176</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>135, 13</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>&amp;Reference:</value>
+    <value>&amp;Reference treatment group:</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -520,13 +520,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelQValueWarning.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelQValueWarning.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 289</value>
+    <value>8, 278</value>
   </data>
   <data name="labelQValueWarning.Size" type="System.Drawing.Size, System.Drawing">
     <value>249, 13</value>
@@ -550,10 +550,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelQValueWarning.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="comboReference.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 216</value>
+    <value>11, 192</value>
   </data>
   <data name="comboReference.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 21</value>
@@ -571,6 +571,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboReference.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBoxFilterQValues.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxFilterQValues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 221</value>
+  </data>
+  <data name="checkBoxFilterQValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 17</value>
+  </data>
+  <data name="checkBoxFilterQValues.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="checkBoxFilterQValues.Text" xml:space="preserve">
+    <value>&amp;Filter out high Q values</value>
+  </data>
+  <data name="&gt;&gt;checkBoxFilterQValues.Name" xml:space="preserve">
+    <value>checkBoxFilterQValues</value>
+  </data>
+  <data name="&gt;&gt;checkBoxFilterQValues.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxFilterQValues.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxFilterQValues.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -580,7 +607,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>303, 314</value>
+    <value>303, 301</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.25pt</value>

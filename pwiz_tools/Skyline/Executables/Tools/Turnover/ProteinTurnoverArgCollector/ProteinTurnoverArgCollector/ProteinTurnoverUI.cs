@@ -27,6 +27,7 @@ namespace ProteinTurnoverArgCollector
         private string avgTurnoverDefault = "0";
         private string IDPDefault = "0";
         private string folderNameDefault = "Data";
+        private bool qValueFilterDefault = true;
         private string qValueDevault = "1";
         
         private string dietEnrichmentRange = "(0,100]";
@@ -47,6 +48,8 @@ namespace ProteinTurnoverArgCollector
             {
                 labelQValue.Text = "";
                 labelQValue.Enabled = false;
+                checkBoxFilterQValues.Checked = false;
+                checkBoxFilterQValues.Enabled = false;
             }
             if (DEFINED_Q_VALUES == DefinedValues.Some)
             {
@@ -70,6 +73,8 @@ namespace ProteinTurnoverArgCollector
                 textAverageTurnover.Text = Arguments[(int)ArgumentIndices.average_turnover];
                 textIDP.Text = Arguments[(int) ArgumentIndices.IDP];
                 textFolderName.Text = Arguments[(int) ArgumentIndices.folder_name];
+                checkBoxFilterQValues.Checked = checkBoxFilterQValues.Enabled && 
+                                                Arguments[(int) ArgumentIndices.filter_Q_values].Equals(Constants.TRUE_STRING);
                 textQValue.Text = Arguments[(int) ArgumentIndices.Q_value];
             }
             else
@@ -78,6 +83,7 @@ namespace ProteinTurnoverArgCollector
                 textAverageTurnover.Text = avgTurnoverDefault;
                 textIDP.Text = IDPDefault;
                 textFolderName.Text = folderNameDefault;
+                checkBoxFilterQValues.Checked = checkBoxFilterQValues.Enabled && qValueFilterDefault;
                 textQValue.Text = qValueDevault;
             }
         }
@@ -85,7 +91,7 @@ namespace ProteinTurnoverArgCollector
         /// <summary>
         /// "Ok" button click event.  If VerifyArgument() returns true will generate arguments.
         /// </summary>
-        private void btnOk_Click(object sender, System.EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
             if (VerifyArguments())
             {
@@ -97,7 +103,7 @@ namespace ProteinTurnoverArgCollector
         /// <summary>
         /// "Cancel" button click event.  Closes form without generating arguments.
         /// </summary>
-        private void btnCancel_Click(object sender, System.EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
 
@@ -111,19 +117,21 @@ namespace ProteinTurnoverArgCollector
         {
             // Checks number text boxes
             List<TextBox> numberInputBoxes = new List<TextBox>{
-                //textResolution,
                 textDietEnrichment,
                 textAverageTurnover,
-                textIDP,
-                textQValue
+                textIDP
             };
             List<string> inputRanges = new List<string> {
                 dietEnrichmentRange,
                 avgTurnoverRange,
-                IDPRange,
-                qValueRange,
+                IDPRange
             };
 
+            if (checkBoxFilterQValues.Checked)
+            {
+                numberInputBoxes.Add(textQValue);
+                inputRanges.Add(qValueRange);
+            }
 
             for (int i = 0; i < numberInputBoxes.Count; i++)
             {
@@ -142,7 +150,7 @@ namespace ProteinTurnoverArgCollector
 
             if (comboReference.SelectedIndex < 0)
             {
-                MessageBox.Show("Please select a reference.");
+                MessageBox.Show(Resources.ProteinTurnoverUI_VerifyArguments_Please_select_a_treatment_group_);
                 return false;
             }
 
@@ -173,10 +181,10 @@ namespace ProteinTurnoverArgCollector
             string min = range[0];
             string max = range[1];
             bool inRange = true;
-
+            double TOLERANCE = 0.00000000001;
             if (Double.TryParse(min, out double minDouble))
             {
-                if (number < minDouble || (number == minDouble && !minInclusive))
+                if (number < minDouble || (Math.Abs(number - minDouble) < TOLERANCE && !minInclusive))
                 {
                     inRange = false;
                 }
@@ -184,7 +192,7 @@ namespace ProteinTurnoverArgCollector
 
             if (Double.TryParse(max, out double maxDouble))
             {
-                if (number > maxDouble || (number == maxDouble && !maxInclusive))
+                if (number > maxDouble || (Math.Abs(number - maxDouble) < TOLERANCE && !maxInclusive))
                 {
                     inRange = false;
                 }
@@ -192,11 +200,11 @@ namespace ProteinTurnoverArgCollector
 
             if (!inRange)
             {
-                string textBounds = String.Format("between {0} and {1}", min, max);
-                textBounds = min == "" ? String.Format("less than {0}", max) : textBounds;
-                textBounds = max == "" ? String.Format("greater than {0}", min) : textBounds;
+                string textBounds = String.Format(Resources.ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_between__1__and__2_, inputBox.Text, min, max);
+                textBounds = min == "" ? String.Format(Resources.ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_less_than__1_, inputBox.Text, max) : textBounds;
+                textBounds = max == "" ? String.Format(Resources.ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_greater_than__1_, inputBox.Text, min) : textBounds;
 
-                MessageBox.Show(String.Format("The number {0} must be ", inputBox.Text) + textBounds);
+                MessageBox.Show(textBounds);
             }
 
             return inRange;
@@ -214,10 +222,17 @@ namespace ProteinTurnoverArgCollector
             Arguments[(int) ArgumentIndices.IDP] = textIDP.Text;
             Arguments[(int) ArgumentIndices.folder_name] = textFolderName.Text;
             Arguments[(int) ArgumentIndices.reference_group] = comboReference.GetItemText(comboReference.SelectedItem);
-            Arguments[(int) ArgumentIndices.Q_value] = textQValue.Text;
-            Arguments[(int) ArgumentIndices.has_Q_values] = DEFINED_Q_VALUES != DefinedValues.None
+            Arguments[(int) ArgumentIndices.Q_value] = textQValue.Enabled ? textQValue.Text : "1";
+            Arguments[(int) ArgumentIndices.filter_Q_values] = checkBoxFilterQValues.Checked
                 ? Constants.TRUE_STRING
                 : Constants.FALSE_STRING;
+        }
+
+        private void checkBoxFilterQValues_CheckedChanged(object sender, EventArgs e)
+        {
+            textQValue.Enabled = checkBoxFilterQValues.Checked;
+            labelQValue.Enabled = checkBoxFilterQValues.Checked;
+            labelQValueWarning.Visible = checkBoxFilterQValues.Checked && DEFINED_Q_VALUES == DefinedValues.Some;
         }
     }
 
@@ -241,7 +256,7 @@ namespace ProteinTurnoverArgCollector
 
             foreach (var qValue in columns[detectionQValue])
             {
-                if (Double.TryParse(qValue, out double result))
+                if (Double.TryParse(qValue, out _))
                 {
                     defined++;
                 }
@@ -290,7 +305,6 @@ namespace ProteinTurnoverArgCollector
                 }
             }
             
-            ICollection<string> groups = new HashSet<string>();
             // The last line in the CSV file is empty, thus we compare length - 1 
             string[] line;
             while ((line = parser.ReadFields()) != null)

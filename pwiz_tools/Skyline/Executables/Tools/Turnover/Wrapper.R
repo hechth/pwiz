@@ -21,9 +21,9 @@ invisible(lapply(packages, library, character.only = TRUE)) # add imported packa
 # min.avg.turnover.score <<- as.numeric ("0")
 # min.isotope.dot.product <<- as.numeric ("0")
 # folder.name <- "Data"
-# reference.cohort <- "OCR"
+# Treatment.Group <- "OCR"
 # Detection.Qvalue.threshold <- as.numeric ("1")
-# Has.Q.Values <- TRUE
+# Filter.Q.Values <- TRUE
 # 
 # setwd("C:/Users/alimarsh/Documents/Turnover/Data")
 
@@ -65,9 +65,9 @@ for (i in 1:9) {
   if (i==4) min.avg.turnover.score <<- as.numeric (arg)
   if (i==5) min.isotope.dot.product <<- as.numeric (arg)
   if (i==6) folder.name <- arg
-  if (i==7) reference.cohort <- arg
+  if (i==7) Treatment.Group <- arg
   if (i==8) Detection.Qvalue.threshold <- as.numeric (arg)
-  if (i==9) Has.Q.Values <- ifelse(arg=="1", TRUE, FALSE)
+  if (i==9) Filter.Q.Values <- ifelse(arg=="1", TRUE, FALSE)
 }
 
 dir.create(file.path(getwd(), folder.name), showWarnings = FALSE) # Create folder for script output

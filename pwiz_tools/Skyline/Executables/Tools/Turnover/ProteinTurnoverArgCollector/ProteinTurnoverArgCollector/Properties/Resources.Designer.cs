@@ -97,11 +97,47 @@ namespace ProteinTurnoverArgCollector.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please select a treatment group..
+        /// </summary>
+        internal static string ProteinTurnoverUI_VerifyArguments_Please_select_a_treatment_group_ {
+            get {
+                return ResourceManager.GetString("ProteinTurnoverUI_VerifyArguments_Please_select_a_treatment_group_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to P value tolerance must be selected.
         /// </summary>
         internal static string ProteinTurnoverUI_VerifyArguments_Radio_must_be_checked {
             get {
                 return ResourceManager.GetString("ProteinTurnoverUI_VerifyArguments_Radio_must_be_checked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number {0} must be between {1} and {2}.
+        /// </summary>
+        internal static string ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_between__1__and__2_ {
+            get {
+                return ResourceManager.GetString("ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_between__1__and__2_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number {0} must be greater than {1}.
+        /// </summary>
+        internal static string ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_greater_than__1_ {
+            get {
+                return ResourceManager.GetString("ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_greater_than__1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number {0} must be less than {1}.
+        /// </summary>
+        internal static string ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_less_than__1_ {
+            get {
+                return ResourceManager.GetString("ProteinTurnoverUI_VerifyInputNumber_The_number__0__must_be_less_than__1_", resourceCulture);
             }
         }
     }

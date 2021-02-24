@@ -19,6 +19,6 @@
         folder_name,
         reference_group,
         Q_value,
-        has_Q_values
+        filter_Q_values
     }
 }
