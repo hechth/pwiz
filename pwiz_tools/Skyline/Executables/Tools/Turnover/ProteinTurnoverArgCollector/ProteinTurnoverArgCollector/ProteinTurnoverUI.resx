@@ -469,13 +469,13 @@
     <value>29, 239</value>
   </data>
   <data name="labelQValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
+    <value>73, 13</value>
   </data>
   <data name="labelQValue.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="labelQValue.Text" xml:space="preserve">
-    <value>&amp;Q value threshold:</value>
+    <value>&amp;Q-value cutoff</value>
   </data>
   <data name="&gt;&gt;labelQValue.Name" xml:space="preserve">
     <value>labelQValue</value>
@@ -580,13 +580,13 @@
     <value>11, 221</value>
   </data>
   <data name="checkBoxFilterQValues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 17</value>
+    <value>121, 17</value>
   </data>
   <data name="checkBoxFilterQValues.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="checkBoxFilterQValues.Text" xml:space="preserve">
-    <value>&amp;Filter out high Q values</value>
+    <value>&amp;Enable Q-value filter</value>
   </data>
   <data name="&gt;&gt;checkBoxFilterQValues.Name" xml:space="preserve">
     <value>checkBoxFilterQValues</value>
