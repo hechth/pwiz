@@ -103,16 +103,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandArgNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CommandArgUsage.ja.resx">
+    <EmbeddedResource Include="..\..\..\CommandArgUsage.ja.resx">
+      <Link>CommandArgUsage.ja.resx</Link>
       <DependentUpon>CommandArgUsage.resx</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="CommandArgUsage.resx">
+    <EmbeddedResource Include="..\..\..\CommandArgUsage.resx">
+      <Link>CommandArgUsage.resx</Link>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandArgUsage.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="CommandArgUsage.zh-CHS.resx">
+    <EmbeddedResource Include="..\..\..\CommandArgUsage.zh-CHS.resx">
+      <Link>CommandArgUsage.zh-CHS.resx</Link>
       <DependentUpon>CommandArgUsage.resx</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -146,7 +149,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommandArgNames.resx</DependentUpon>
     </Compile>
-    <Compile Include="CommandArgUsage.Designer.cs">
+    <Compile Include="..\..\..\CommandArgUsage.Designer.cs">
+      <Link>CommandArgUsage.Designer.cs</Link>
       <DependentUpon>CommandArgUsage.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

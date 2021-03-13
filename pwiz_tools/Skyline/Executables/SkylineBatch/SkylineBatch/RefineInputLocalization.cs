@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Reflection;
 using System.Resources;
+using pwiz.Skyline;
 
 namespace SkylineBatch
 {
