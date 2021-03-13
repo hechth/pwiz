@@ -105,17 +105,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\CommandArgUsage.ja.resx">
       <Link>CommandArgUsage.ja.resx</Link>
+	  <LogicalName>pwiz.Skyline.CommandArgUsage.resources</LogicalName>
       <DependentUpon>CommandArgUsage.resx</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\CommandArgUsage.resx">
       <Link>CommandArgUsage.resx</Link>
+	  <LogicalName>pwiz.Skyline.CommandArgUsage.resources</LogicalName>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandArgUsage.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\CommandArgUsage.zh-CHS.resx">
       <Link>CommandArgUsage.zh-CHS.resx</Link>
+	  <LogicalName>pwiz.Skyline.CommandArgUsage.resources</LogicalName>
       <DependentUpon>CommandArgUsage.resx</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
